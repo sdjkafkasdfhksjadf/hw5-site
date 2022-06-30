@@ -1,0 +1,30 @@
+<!--
+File: index.html
+GUI Assignment: HW5 Scrabble Row
+Timothy Retelle, UMass Lowell Computer Science, timothy_retelle@student.uml.edu
+Copyright (c) 2022 by Timothy Retelle. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author. This is a small site to generate multiplication tables.
+updated on June 29th, 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>Scrabble</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<div>
+		<img id="board" src="graphics_data/Scrabble_Board_OneLine.png">
+	</div>
+	<div id="tilerack"></div>
+	<button onClick="wordSubmit()">Submit Word</button>
+	<button onClick="makeLetters()">New Letters</button>
+	
+	<h2 id="result"></h2><!--empty field for the score output or error message-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/jquery-collision.min.js"></script>
+	<script src="js/script.js"></script>
+	</body>
+</html>
